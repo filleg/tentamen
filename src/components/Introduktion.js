@@ -1,15 +1,17 @@
 import React from 'react'
+import { uppgift1 } from '../view/uppgift1/Uppgift1'
 
-export const Introduktion = () => {
+export const Introduktion = (props) => {
 	return (
 		<div className="introduktion">
-			<h2>Förnamn: </h2>
-			<h2>Efternamn: </h2>
-			<h2>Kurs: </h2>
+			<h2>Förnamn: {props.fname} </h2>
+			<h2>Efternamn: {props.lname} </h2>
+			<h2>Kurs: {props.course}</h2>
 		</div>
 	)
 }
 
+export default Introduktion 
 
 /*
 
